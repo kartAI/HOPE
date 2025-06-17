@@ -1,0 +1,41 @@
+{
+    "name": "HOPE",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "runArgs": [
+        "--gpus", "all",
+        "--shm-size", "6G"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-python.black-formatter",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "AndyCui.vscode-log-viewer-gb2312",
+                "njpwerner.autodocstring",
+                "ms-toolsai.jupyter",
+                "alexcvzz.vscode-sqlite",
+                "donjayamanne.python-environment-manager",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "njqdev.vscode-python-typehint",
+                "mgesbert.python-path",
+                "littlefoxteam.vscode-python-test-adapter",
+                "streetsidesoftware.code-spell-checker",
+                "mechatroner.rainbow-csv",
+                "mhutchie.git-graph",
+                "bierner.markdown-mermaid",
+                "GitHub.vscode-pull-request-github",
+                "ms-azuretools.vscode-docker",
+                "ms-python.isort",
+                "ms-toolsai.datawrangler"
+            ]
+        }
+    },
+    "postStartCommand": "python -m pip install --upgrade pip; pip install -e .; pip install torch==2.5.0+cu118 torchvision==0.20.0+cu118 --index-url https://download.pytorch.org/whl/cu118"
+}

@@ -1,0 +1,19 @@
+# Remote Packages
+
+ragas
+nest_asyncio
+unstructured
+langchain-chroma
+langchain-huggingface
+vllm
+nvidia-ml-py
+jieba
+peft
+simsimd
+httplib2
+
+#torch == 2.5.0+cu118 -i https://download.pytorch.org/whl/cu118 
+#torchvision == 0.20.0+cu118 # -i https://download.pytorch.org/whl/cu118 
+
+
+# Local Packages
