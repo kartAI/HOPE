@@ -6,7 +6,7 @@
 
 # 
 
-This repository contains the code implementation for the HOPE method introduced in "A new HOPE: A Unified Evaluation Metric for Text Chunking" which is accepted for the SIGIR25 conference. 
+This repository contains the code implementation for the HOPE method introduced in "A new HOPE: Domain-agnostic Automatic Evaluation of Text Chunking" which is accepted for the SIGIR25 conference. 
 
 
 Full paper: https://arxiv.org/abs/2505.02171
